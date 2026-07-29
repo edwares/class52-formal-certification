@@ -14,6 +14,8 @@ All **30 required class-52 instances** have independently verified UNSAT certifi
 
 The clean-room reproduction report is in [`reproduction/cleanroom-verification-report.md`](reproduction/cleanroom-verification-report.md).
 
+The mathematical reduction, formula semantics, 30-instance case split, and remaining provenance requirement are documented in [`docs/reduction-and-exhaustiveness.md`](docs/reduction-and-exhaustiveness.md).
+
 ## Scope
 
 The result is deliberately narrow:
@@ -21,6 +23,8 @@ The result is deliberately narrow:
 > Link class 52 is formally eliminated under the audited corrected class-52 PB reduction.
 
 It does **not** establish `C(13,7,4)=30`, resolve the other 67 link classes, or by itself establish novelty or priority.
+
+The 30 formula refutations are fully formal and independently reproduced. A completely self-contained exhaustiveness audit additionally requires publication of the original orbit/profile screening generator; the reduction document identifies that remaining provenance item explicitly.
 
 ## Immutable certification artifact
 
@@ -72,7 +76,7 @@ See [`docs/technical-report.md`](docs/technical-report.md) for the per-instance 
 
 ## Repository layout
 
-- `docs/` — technical certification report
+- `docs/` — technical certification and reduction reports
 - `manifests/` — hashes, statuses, conversion audit, and final audit
 - `reproduction/` — clean-room report, generated results, logs, and audit bundle
 - `scripts/` — verification and proof-generation source
