@@ -14,6 +14,8 @@ All **30 required class-52 instances** have independently verified UNSAT certifi
 
 The clean-room reproduction report is in [`reproduction/cleanroom-verification-report.md`](reproduction/cleanroom-verification-report.md).
 
+The mathematical reduction, formula semantics, and 30-instance case split are documented in [`docs/reduction-and-exhaustiveness.md`](docs/reduction-and-exhaustiveness.md).
+
 ## Scope
 
 The result is deliberately narrow:
@@ -72,7 +74,7 @@ See [`docs/technical-report.md`](docs/technical-report.md) for the per-instance 
 
 ## Repository layout
 
-- `docs/` — technical certification report
+- `docs/` — technical certification and reduction reports
 - `manifests/` — hashes, statuses, conversion audit, and final audit
 - `reproduction/` — clean-room report, generated results, logs, and audit bundle
 - `scripts/` — verification and proof-generation source
