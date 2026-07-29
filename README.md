@@ -1,5 +1,7 @@
 # Formal elimination of link class 52 in the C(13,7,4) search
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.21660461.svg)](https://doi.org/10.5281/zenodo.21660461)
+
 This repository records a formally checked elimination of **link class 52** under the audited corrected pseudo-Boolean reduction used in the HorizonMath `C(13,7,4)` covering-design search.
 
 ## Result
@@ -82,7 +84,7 @@ See [`docs/technical-report.md`](docs/technical-report.md) for the per-instance 
 
 ## Citation
 
-Citation metadata is provided in [`CITATION.cff`](CITATION.cff). Until a DOI is assigned, cite the tagged GitHub release and its SHA-256.
+Version 1.0.0 is archived on Zenodo under DOI [`10.5281/zenodo.21660461`](https://doi.org/10.5281/zenodo.21660461). Citation metadata is provided in [`CITATION.cff`](CITATION.cff).
 
 ## Third-party software
 
