@@ -1,0 +1,6 @@
+__pycache__/
+*.py[cod]
+verification_logs/
+verification_results.json
+Class52_formal_certification_complete/
+Class52_formal_certification_complete.zip

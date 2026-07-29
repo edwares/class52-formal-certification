@@ -1,0 +1,38 @@
+name: Verify release certificates
+
+on:
+  workflow_dispatch:
+  release:
+    types: [published]
+
+permissions:
+  contents: read
+
+jobs:
+  verify:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+      - name: Download v1.0.0 certification asset
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh release download v1.0.0 --pattern 'Class52_formal_certification_complete.zip'
+      - name: Verify SHA-256
+        run: sha256sum -c release/Class52_formal_certification_complete.zip.sha256
+      - name: Extract and verify all 30 certificates
+        run: |
+          unzip -q Class52_formal_certification_complete.zip
+          cd Class52_formal_certification_complete
+          python3 verify_all.py
+      - name: Upload verification results
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: class52-verification-results
+          path: |
+            Class52_formal_certification_complete/verification_results.json
+            Class52_formal_certification_complete/verification_logs/
