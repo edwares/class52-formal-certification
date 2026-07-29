@@ -1,5 +1,5 @@
 cff-version: 1.2.0
-message: "Please cite the tagged release and, once available, the archived DOI."
+message: "Please cite this software using the metadata below."
 title: "Formal elimination of link class 52 in the C(13,7,4) covering-design search"
 type: software
 authors:
@@ -7,15 +7,19 @@ authors:
     given-names: Eric
 version: 1.0.0
 date-released: 2026-07-28
+doi: "10.5281/zenodo.21660461"
+url: "https://doi.org/10.5281/zenodo.21660461"
 abstract: >-
   Formally checked UNSAT certificates for all 30 pseudo-Boolean instances
   required to eliminate link class 52 under the audited corrected reduction
   in the C(13,7,4) covering-design search.
 keywords:
   - covering designs
+  - C(13,7,4)
   - pseudo-Boolean proofs
   - VeriPB
   - RoundingSat
   - formal verification
 license: MIT
 repository-code: "https://github.com/edwares/class52-formal-certification"
+repository-artifact: "https://github.com/edwares/class52-formal-certification/releases/tag/v1.0.0"
